@@ -1,0 +1,33 @@
+/* Glowing Lines Animation */
+@keyframes glowing-lines {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+  
+  .animate-glowing-lines .animate-line {
+    animation: glowing-lines 5s linear infinite;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7), 0 0 25px rgba(255, 255, 255, 0.5);
+  }
+  
+  /* Particle Animation */
+  @keyframes pulse {
+    0% { opacity: 0.1; transform: scale(0.7); }
+    50% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0.1; transform: scale(0.7); }
+  }
+  
+  .animate-particles .animate-pulse {
+    animation: pulse 2s infinite ease-in-out;
+  }
+  
+  /* Background Gradient Animation */
+  @keyframes gradient-bg {
+    0% { background: linear-gradient(135deg, #6a11cb, #2575fc); }
+    50% { background: linear-gradient(135deg, #a8c0ff, #3f2b96); }
+    100% { background: linear-gradient(135deg, #6a11cb, #2575fc); }
+  }
+  
+  .bg-gradient-to-br {
+    animation: gradient-bg 10s ease infinite;
+  }
+  
